@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./simplecss.css">
+    <title>Mod 3 Project Pokemon Brock Gym Battle</title>
+</head>
+<body>
+<div id="container">
+    <div id="header"><h1>MOD 3 Project - Pokemon Brock Gym Battle</h1></div>
+    <div id="main-container">
+        <div id="overworld">
+            <div id="gym">
+                    <img src="./assets/overworld/Red_aNorthFace.gif" alt="" id="red">
+            </div>
+        </div>
+        <div id="switchcontainer">
+            <div id="currentpokemon">
+                <div id="cpokemonname"></div>
+                <div id="cpokemonlevel"></div>
+                <div id="cpokemonhp"></div>
+                <img src="" alt="" id="cpokemonsprite">
+            </div>
+            
+            <div id="partypokemon1">
+                <div id="pp1pokemonname"></div>
+                <div id="pp1pokemonlevel"></div>
+                <div id="pp1pokemonhp"></div>
+                <img src="" alt="" id="pp1pokemonsprite">
+            </div>
+            
+            <div id="partypokemon2">
+                    <div id="pp2pokemonname"></div>
+                    <div id="pp2pokemonlevel"></div>
+                    <div id="pp2pokemonhp"></div>
+                    <img src="" alt="" id="pp2pokemonsprite">
+            </div>
+
+            <div id="partypokemon3">
+                    <div id="pp3pokemonname"></div>
+                    <div id="pp3pokemonlevel"></div>
+                    <div id="pp3pokemonhp"></div>
+                    <img src="" alt="" id="pp3pokemonsprite">
+            </div>
+            <div id="partypokemon4">
+                    <div id="pp4pokemonname"></div>
+                    <div id="pp4pokemonlevel"></div>
+                    <div id="pp4pokemonhp"></div>
+                    <img src="" alt="" id="pp4pokemonsprite">
+            </div>
+            <div id="partypokemon5">
+                    <div id="pp5pokemonname"></div>
+                    <div id="pp5pokemonlevel"></div>
+                    <div id="pp5pokemonhp"></div>
+                    <img src="" alt="" id="pp5pokemonsprite">
+            </div>
+            <div id="switchcancel"></div>
+            <div id="switchtextarea">Select a Pokemon to swap in.</div>
+        </div>
+        <div id="battlecontainer">
+            <div id="bgscreen">
+                <div id="leftBG">
+                    <div id="enemynameplate">
+                        <progress id="enemyhpbar" value=100 max=100></progress>
+                        <div id="enemylevel"></div>
+                        <div id="enemyname" class="name"></div>
+                        <img src="./assets/EnemyNameplate.png" alt="" id="enemynameplate">
+                        
+                    </div>
+                    <div id="playerspritediv">
+                        <img src="" alt="" id="playersprite">
+                    </div>
+                    
+                </div>
+                <div id="rightBG">
+                    <div id="enemyspritediv">
+                        <img src="" alt="" id="enemysprite">
+                    </div>
+                    <div id="playernameplate">
+                        <img src="./assets/PlayerNameplate.png" alt="" id="playernameplate">
+                        <div id="playerlevel"></div>
+                        <div id="playername" class="name"></div>
+                        <progress id="playerhpbar" value=100 max=100></progress>
+                    </div>
+                </div>
+                
+            </div>    
+            <div id="notification">
+                <div id="fulltextarea"></div>
+                <div id="halftextarea"></div>
+                <div id="movesmenu">
+                        <div id="move1"></div>
+                        <div id="move2"></div>
+                        <div id="back"></div>
+                        <div id="move3"></div>
+                        <div id="move4"></div>
+                        <div id="back2"></div>
+                        <img src="./assets/movesui.png" alt="" id="movesui">
+                </div>
+                <div id="actionmenu">
+                    <div id="fight"></div>
+                    <div id="bag"></div>
+                    <div id="pkmn"></div>
+                    <div id="run"></div>
+                    <img src="./assets/ActionMenu.png" alt="" id="menuui">
+                </div>
+            </div>
+        </div>
+        <div id="gameend">
+            <iframe src="./assets/sounds/TitleScreen.mp3" allow="autoplay" loop="true" style="display: none;" id="titleaudio"></iframe>
+        </div>
+        </div>
+        <div id="controls">
+            <button id="hardreset">RESET</button>
+            <button id="playcontrol">► ♫</button>
+            <button id="pausecontrol">❚❚ ♫</button>
+        </div>
+        <div id="footer">
+                <img src="./assets/pokeballs.png" alt="" class="footer">
+                Flatiron Module 3 Project - Gian and Shu
+                <img src="./assets/pokeballs.png" alt="" class="footer">
+            </div>
+</div>
+    <script src="./src/trainer.js"></script>
+    <script src="./src/pokemon.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>

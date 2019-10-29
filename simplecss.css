@@ -1,0 +1,706 @@
+body{
+    background-image: url("./assets/pokeballbackgroundFIXED50.png");
+}
+
+
+div#header{
+    font-family: PokemonClassicFont;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    top: 0;
+    width: 90%;
+    border: 10px solid black;
+    margin-left: -45%;
+    position: fixed;
+    left: 50%
+}
+
+img.footer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+div#footer{
+    font-family: PokemonClassicFont;
+    text-align: center;
+    background-color: whitesmoke;
+    position: fixed;
+    margin-left: -40%;
+    display: block;
+    align-content: center;
+    width: 80%;
+    left: 50%;
+    bottom: 0;
+    font-size: xx-small;
+    border: 1px solid black;
+
+}
+
+div#main-container{
+    margin-top: 10rem;
+}
+
+div#gameend{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 533px;
+    max-width: 800px;
+    max-height: 533px;
+    z-index: 99;
+    border: 5px solid black;
+    position: relative;
+}
+
+div#switchcontainer{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 533px;
+    max-width: 800px;
+    max-height: 533px;
+    z-index: 1;
+    border: 5px solid black;
+    background-image: url("./assets/SwitchUI/mergedui.png");
+    position: relative;
+}
+
+div#switchcancel{
+    /* background-color: blue; */
+    /* opacity: .3; */
+    position: absolute;
+    width: 180px;
+    height: 67px;
+    bottom: 1.2rem;
+    right: .4rem;
+}
+
+div#currentpokemon{
+    position: absolute;
+    width: 280px;
+    height: 183px;
+    left: .5rem;
+    top: 4.2rem;
+}
+
+div#cpokemonname{
+    position: absolute;
+    top: 2.2rem;
+    left: 6rem;
+    color: #f8f8f8;
+    font-family: PokemonClassicFont;
+    font-size: 1.4rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+    
+}
+
+div#cpokemonlevel{
+    position: absolute;
+    top: 5.0rem;
+    left: 7rem;
+    font-family: PokemonClassicFont;
+    font-size: 1.4rem;
+    color: #f8f8f8;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+div#cpokemonhp{
+    position: absolute;
+    top: 7.8rem;
+    left: 5rem;
+    font-family: PokemonClassicFont;
+    color: #f8f8f8;
+    font-size: 1.4rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+img#cpokemonsprite{
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+}
+
+div#partypokemon1{
+    position: absolute;
+    width: 500px;
+    height: 73px;
+    top: 2.1rem;
+    right: .4rem;
+}
+
+div#pp1pokemonname{
+    position: absolute;
+    top: .6rem;
+    left: 8rem;
+    color: #f8f8f8;
+    font-family: PokemonClassicFont;
+    font-size: 1.3rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+    
+}
+
+div#pp1pokemonlevel{
+    position: absolute;
+    top: 1.3rem;
+    left: 18rem;
+    font-family: PokemonClassicFont;
+    font-size: .8rem;
+    color: #f8f8f8;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+div#pp1pokemonhp{
+    position: absolute;
+    top: 1rem;
+    left: 23rem;
+    font-family: PokemonClassicFont;
+    color: #f8f8f8;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+img#pp1pokemonsprite{
+    position: absolute;
+    top: .5rem;
+    left: 4.7rem;
+}
+
+div#partypokemon2{
+    position: absolute;
+    width: 500px;
+    height: 73px;
+    top: 7.1rem;
+    right: .4rem;
+}
+
+div#pp2pokemonname{
+    position: absolute;
+    top: .6rem;
+    left: 8rem;
+    color: #f8f8f8;
+    font-family: PokemonClassicFont;
+    font-size: 1.3rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+    
+}
+
+div#pp2pokemonlevel{
+    position: absolute;
+    top: 1.3rem;
+    left: 18rem;
+    font-family: PokemonClassicFont;
+    font-size: .8rem;
+    color: #f8f8f8;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+div#pp2pokemonhp{
+    position: absolute;
+    top: 1rem;
+    left: 23rem;
+    font-family: PokemonClassicFont;
+    color: #f8f8f8;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+img#pp2pokemonsprite{
+    position: absolute;
+    top: .5rem;
+    left: 4.7rem;
+}
+
+div#partypokemon3{
+    position: absolute;
+    width: 500px;
+    height: 73px;
+    top: 12.1rem;
+    right: .4rem;
+}
+
+div#pp3pokemonname{
+    position: absolute;
+    top: .6rem;
+    left: 8rem;
+    color: #f8f8f8;
+    font-family: PokemonClassicFont;
+    font-size: 1.3rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+    
+}
+
+div#pp3pokemonlevel{
+    position: absolute;
+    top: 1.3rem;
+    left: 18rem;
+    font-family: PokemonClassicFont;
+    font-size: .8rem;
+    color: #f8f8f8;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+div#pp3pokemonhp{
+    position: absolute;
+    top: 1rem;
+    left: 23rem;
+    font-family: PokemonClassicFont;
+    color: #f8f8f8;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+img#pp3pokemonsprite{
+    position: absolute;
+    top: .5rem;
+    left: 4.7rem;
+}
+
+div#partypokemon4{
+    position: absolute;
+    width: 500px;
+    height: 73px;
+    top: 17.1rem;
+    right: .4rem;
+}
+
+div#pp4pokemonname{
+    position: absolute;
+    top: .6rem;
+    left: 8rem;
+    color: #f8f8f8;
+    font-family: PokemonClassicFont;
+    font-size: 1.3rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+    
+}
+
+div#pp4pokemonlevel{
+    position: absolute;
+    top: 1.3rem;
+    left: 18rem;
+    font-family: PokemonClassicFont;
+    font-size: .8rem;
+    color: #f8f8f8;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+div#pp4pokemonhp{
+    position: absolute;
+    top: 1rem;
+    left: 23rem;
+    font-family: PokemonClassicFont;
+    color: #f8f8f8;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+img#pp4pokemonsprite{
+    position: absolute;
+    top: .5rem;
+    left: 4.7rem;
+}
+
+
+div#partypokemon5{
+    position: absolute;
+    width: 500px;
+    height: 73px;
+    top: 22.1rem;
+    right: .4rem;
+}
+
+div#pp5pokemonname{
+    position: absolute;
+    top: .6rem;
+    left: 8rem;
+    color: #f8f8f8;
+    font-family: PokemonClassicFont;
+    font-size: 1.3rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+    
+}
+
+div#pp5pokemonlevel{
+    position: absolute;
+    top: 1.3rem;
+    left: 18rem;
+    font-family: PokemonClassicFont;
+    font-size: .8rem;
+    color: #f8f8f8;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+div#pp5pokemonhp{
+    position: absolute;
+    top: 1rem;
+    left: 23rem;
+    font-family: PokemonClassicFont;
+    color: #f8f8f8;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 4px 2px #707070;
+}
+
+img#pp5pokemonsprite{
+    position: absolute;
+    top: .5rem;
+    left: 4.7rem;
+}
+
+div#switchtextarea{
+    position: absolute;
+    width: 66.5%;
+    height: 5%;
+    bottom: .44rem;
+    left: .49rem;
+    padding: 4%;
+    font-size: 15px;
+    font-family: PokemonClassicFont;
+    border: 1px solid black;
+}
+
+div#battlecontainer{
+    display: grid;
+    grid-template-rows: 70% 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 533px;
+    max-width: 800px;
+    max-height: 533px;
+    border: 5px solid black;
+    z-index: 1;
+}
+
+div#bgscreen{
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+    /* background-image: url("./assets/BattleBG.png"); */
+    z-index: 2;
+
+}
+
+div#notification{
+    font-family: PokemonClassicFont;
+    color: whitesmoke;
+    z-index: 10;
+    position: relative;
+}
+
+div#fulltextarea{
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 92%;
+    height: 60%;
+    padding: 4%;
+    font-size: 15px;
+    font-family: PokemonClassicFont;
+    z-index: 15;
+}
+
+div#halftextarea{
+    /* border: 1px solid black; */
+    position: absolute;
+    width: 42%;
+    height: 50%;
+    padding: 6% 4% 4% 7%;
+    font-family: PokemonClassicFont;
+    z-index: 15;
+
+}
+
+div#actionmenu{
+    /* border: 1px solid blue; */
+    position: relative;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    z-index: 15;
+}
+
+div#movesmenu{
+    /* border: 1px solid cyan; */
+    position: absolute;
+    display: grid;
+    grid-template-columns: 33.5% 33.5% 33%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+}
+
+div#move1{
+    /* background-color:red;
+    opacity: .8; */
+    z-index: 16;
+    padding: 15% 0% 0% 0%;
+    font-family: PokemonClassicFont;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+div#move2{
+    /* background-color:blue;
+    opacity: .8; */
+    z-index: 16;
+    padding: 15% 0% 0% 0%;
+    font-family: PokemonClassicFont;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+div#move3{
+    /* background-color:green;
+    opacity: .8; */
+    z-index: 16;
+    padding: 0% 0% 8% 0%;
+    font-family: PokemonClassicFont;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+div#move4{
+    /* background-color:yellow;
+    opacity: .8; */
+    z-index: 16;
+    padding: 0% 0% 8% 0%;
+    font-family: PokemonClassicFont;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+div#back{
+    /* background-color:pink; */
+    /* opacity: .8; */
+    z-index: 16;
+    padding: 10%;
+    font-family: PokemonClassicFont;
+    color: black;
+}
+
+div#back2{
+    /* background-color: purple; */
+    /* opacity: .8; */
+    z-index: 16;
+    padding: 10%;
+    font-family: PokemonClassicFont;
+    color: black;
+}
+
+img#menuui{
+    position: absolute;
+    z-index: 11;
+}
+
+img#movesui{
+    position: absolute;
+    left: 0;
+}
+
+div#fight{
+    background-color: black;
+    z-index: 12;
+    opacity: 0;
+}
+
+div#pkmn{
+    background-color:blue;
+    z-index: 12;
+    opacity: 0;
+}
+
+div#bag{
+    background-color: red;
+    z-index: 12;
+    opacity: 0;
+}
+
+div#run{
+    background-color: cyan;
+    z-index: 12;
+    opacity: 0;
+}
+
+div#enemyameplate{
+    margin-top: 50px;
+    z-index: 4;
+}
+
+div#playerprite{
+    margin-top: 100px;
+    z-index: 5;
+}
+
+div#enemyspritediv{
+    align-content: center;
+    display: block;
+    position: relative;
+    z-index: 7;
+    /* border: 5px solid aqua; */
+    animation-duration: .35s;
+    animation-iteration-count: infinite;
+}
+
+div#playerspritediv{
+    align-content: center;
+    position: relative;
+    z-index: 7;
+    /* border: 5px solid aqua; */
+    animation-duration: .35s;
+    animation-iteration-count: infinite;
+}
+
+div#enemynameplate{
+    align-content: center;
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    z-index: 8;
+    /* border: 5px solid green; */
+}
+
+div#playernameplate{
+    align-content: center;
+    display: block;
+    position: relative;
+    z-index: 8;
+    /* border: 5px solid green; */
+}
+
+img#enemynameplate{
+    z-index: 8;
+}
+
+progress#enemyhpbar{
+    position: absolute;
+    z-index: 7;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10rem;
+    height: .7em;
+    left: 9rem;
+    top: 5.8rem;
+}
+
+
+progress#playerhpbar{
+    position: absolute;
+    z-index: 7;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10rem;
+    height: .65em;
+    right: 4.55rem;
+    top: 3.55rem;
+}
+
+div#playerlevel{
+    position: absolute;
+    left: 18.5rem;
+    top: 1.1rem;
+    font-family: PokemonClassicFont;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+div#playername{
+    position: absolute;
+    font-family: PokemonClassicFont;
+    font-size: 1.5rem;
+    top: .5rem;
+    left: 6.7rem;
+}
+
+div#enemylevel{
+    position: absolute;
+    left: 14.5rem;
+    top: 3.3rem;
+    font-family: PokemonClassicFont;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+div#enemyname{
+    position: absolute;
+    font-family: PokemonClassicFont;
+    font-size: 1.5rem;
+    top: 2.6rem;
+    left: 2.2rem;
+}
+
+div#controls{
+    position: absolute;
+    bottom: 0rem;
+    left: 1rem;
+}
+
+div#overworld{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 800px;
+    height: 533px;
+    max-width: 800px;
+    max-height: 533px;
+    z-index: 99;
+    border: 5px solid black;
+    background-color: black;
+    position: relative;
+}
+
+div#gym{
+    position: absolute;
+    left: 25%;
+    height: 533px;
+    width: 433px;
+    background-image: url('./assets/overworld/GYMEMPTY.png')
+}
+
+img#red{
+    position: absolute;
+}
+
+@font-face {
+    font-family: PokemonClassicFont;
+    src: url(./assets/Pokemon\ Classic.ttf);
+  }
+
+@keyframes shaking {
+    0%   {left:0px; top:0px;}
+    25%  {left:10%; top:0px;}
+    50%  {left:0px; top:0px;}
+    75%  {left:10%; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+@keyframes dropdead {
+    0%   {left:0px; top:0%;}
+    20%  {left:0px; top:5%;}
+    40%  {left:0px; top:15%;}
+    60%  {left:0px; top:20%;}
+    80%  {left:0px; top:25%;}
+    100%  {left:0px; top:30%;}
+}

@@ -1,0 +1,67 @@
+body{
+    background-image: url("../assets/pokeballbackgroundFIXED50.png");
+}
+
+
+div#header{
+    font-family: PokemonClassicFont;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    top: 0;
+    width: 90%;
+    border: 10px solid black;
+    margin-left: -45%;
+    position: fixed;
+    left: 50%
+}
+
+img.footer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+div#footer{
+    font-family: PokemonClassicFont;
+    text-align: center;
+    background-color: whitesmoke;
+    position: fixed;
+    margin-left: -40%;
+    display: block;
+    align-content: center;
+    width: 80%;
+    left: 50%;
+    bottom: 0;
+    font-size: xx-small;
+    border: 1px solid black;
+
+}
+
+div#main-container{
+    margin-top: 10rem;
+}
+
+div#overworld{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 800px;
+    height: 533px;
+    max-width: 800px;
+    max-height: 533px;
+    z-index: 99;
+    border: 5px solid black;
+    background-color: black;
+    position: relative;
+}
+
+div#gym{
+    position: absolute;
+    left: 25%;
+    height: 533px;
+    width: 433px;
+    background-image: url('../assets/overworld/GYMEMPTY.png')
+}
+
+img#red{
+    position: absolute;
+}

@@ -1,0 +1,83 @@
+               // if (hpBar.dataset.currentHp<=0){
+                //     hpBar.dataset.currentHp = 0;
+                //     let newHpPercent = Math.round((hpBar.dataset.currentHp/Number(maxHp))*100);
+                //         hpBar.value = newHpPercent;
+                //     debugger
+                // }else{
+                // let newHpPercent = Math.round((hpBar.dataset.currentHp/Number(maxHp))*100);
+                //     hpBar.value = newHpPercent;
+                // }
+
+//movecode with winning condition via fetch.
+
+dealDamage(e.currentTarget.dataset.moveDmg,"enemyhpbar");
+    provideFeedback();
+    //Check if enemy Pokemon fainted.
+    if(document.getElementById("enemyhpbar").value === 0){
+        let eTrainerId = document.getElementById("enemynameplate").dataset.trainerId;
+        //fetch call to check if enemy Trainer has viable pokemon.
+            fetch(TRAINERSURL+eTrainerId)
+            .then(res => res.json())
+            .then(trainer => {
+                let eTrainer = new Trainer(trainer);
+                    if(eTrainer.hasViablePokemon()){
+                        eTrainer.nextViablePokemon();
+                        displayMenuUI();
+                    }else{
+                        alert("Player Won");
+                    }
+            });
+    }else{
+    //Battle Loop continues if enemy Pokemon hasn't fainted.
+        dealDamage(enemyMove(),"playerhpbar");
+    //Check if player Pokemon fainted.
+        if(document.getElementById("playerhpbar").value === 0){
+            let pTrainerId = document.getElementById("playernameplate").dataset.trainerId;
+            //fetch call to check if Player has viable pokemon.
+                fetch(TRAINERSURL+pTrainerId)
+                .then(res => res.json())
+                .then(trainer => {
+                    let pTrainer = new Trainer(trainer);
+                        if(pTrainer.hasViablePokemon()){
+                            pTrainer.nextViablePokemon();
+                        }else{
+                            alert("Player Lost");
+                        }
+                });
+        }
+        displayMenuUI();
+    }   
+
+
+
+
+
+
+    function checkEnemyFaint(){
+let eTrainerId = document.getElementById("enemynameplate").dataset.trainerId;
+    fetch(TRAINERSURL+eTrainerId)
+    .then(res => res.json())
+    .then(trainer => {
+        let eTrainer = new Trainer(trainer);
+            if(eTrainer.hasViablePokemon()){
+                eTrainer.nextViablePokemon();
+                displayMenuUI();
+            }else{
+                alert("Player Won");
+            }
+    });
+}
+
+function checkPlayerFaint(){
+let pTrainerId = document.getElementById("playernameplate").dataset.trainerId;
+    fetch(TRAINERSURL+pTrainerId)
+    .then(res => res.json())
+    .then(trainer => {
+        let pTrainer = new Trainer(trainer);
+            if(pTrainer.hasViablePokemon()){
+                pTrainer.nextViablePokemon();
+            }else{
+                alert("Player Lost");
+            }
+    });
+}
