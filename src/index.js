@@ -1,5 +1,9 @@
-const TRAINERSURL = "http://localhost:8000/trainers/"
-const POKEMONSURL = "http://localhost:8000/pokemons/"
+// const TRAINERSURL = "http://localhost:8000/trainers/"
+// const POKEMONSURL = "http://localhost:8000/pokemons/"
+
+const TRAINERSURL = "https://pokemonbattler-gg.herokuapp.com/trainers/"
+const POKEMONSURL = "https://pokemonbattler-gg.herokuapp.com/pokemons/"
+
 const GYMBATTLE = new Audio("./assets/sounds/GymBattle.mp3");
 const WINAUDIO = new Audio("./assets/sounds/Victory.mp3");
 const LOSEAUDIO = new Audio("./assets/sounds/PCenter.mp3");
